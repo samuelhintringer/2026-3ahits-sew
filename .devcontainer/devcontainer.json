@@ -1,0 +1,12 @@
+{
+  "name": "C# Console Development",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:10.0-noble",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csdevkit"
+      ]
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh"
+}

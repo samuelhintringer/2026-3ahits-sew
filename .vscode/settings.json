@@ -1,0 +1,26 @@
+{
+  "editor.fontSize": 13,
+  "terminal.integrated.fontSize": 13,
+  "chat.disableAIFeatures": true,
+  "dotnet.codeLens.enableReferencesCodeLens": false,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": true,
+  "editor.stickyScroll.enabled": false,
+  "editor.inlayHints.enabled": "off",
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "explorer.compactFolders": false,
+  "explorer.excludeGitIgnore": true,
+  "extensions.ignoreRecommendations": true,
+  "git.autofetch": true,
+  "git.autofetchPeriod": 30,
+  "files.exclude": {
+    ".devcontainer": true,
+    ".vscode": true,
+    ".gitignore": true,
+    "ConsoleApp.slnx": true,
+    "**/.*": true,
+    "**/*.csproj": true
+  }
+}
