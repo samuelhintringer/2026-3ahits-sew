@@ -1,8 +1,10 @@
 #!/bin/bash
 
-git add ~/2026-3ahits-sew
+name="2026-3ahits-sew"
 
-git stage ~/2026-3ahits-sew
+git add ~/$name
+
+git stage ~/$name
 
 git commit -m "update"
 
