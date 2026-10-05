@@ -6,7 +6,7 @@ namespace OOP;
 class Bankaccount
 {
     double balance;
-    int interestRate;
+    double interestRate;
     string owner;
     int transCount;
 
@@ -27,20 +27,18 @@ class Bankaccount
 
     public double Jahresabschluss()
     {
-        for(int i = 0; i < transCount; i++)
+        if(transCount > 5)
         {
-            if(i > 5)
+            if(transCount > 10)
             {
-                if(i > 10)
-                {
-                    balance -= 
-                }
-                else
-                {
-                    
-                }
+                balance -= (double)(transCount - 10) * 0.05 + 5;
+            }
+            else
+            {
+                balance -= (double)(transCount - 5) * 5;
             }
         }
+        transCount = 0;
         balance += balance * interestRate / 100;
         return balance * interestRate / 100;
     }
@@ -67,7 +65,7 @@ class Bankaccount
         
     }
 
-    public Bankaccount(double balance, int interestRate, string owner)
+    public Bankaccount(double balance, double interestRate, string owner)
     {
         this.balance = balance;
         this.interestRate = interestRate;
