@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd berichte
+
 {
     echo -e "# Arbeitsberichte" "\n"
     for file in 2*.md; do
@@ -27,6 +29,8 @@
         echo -e "\n"
     done
 } > ../README.md
+
+cd ..
 
 sleep 5
 
