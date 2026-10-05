@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+cd berichte
+
 cat << EOF > $(date +"%y%m%d").md
 # Arbeitsbericht
 
@@ -11,5 +13,7 @@ cat << EOF > $(date +"%y%m%d").md
 - Aufgaben: $2
 - Source: $3
 EOF
+
+cd ..
 
 ./update.sh
