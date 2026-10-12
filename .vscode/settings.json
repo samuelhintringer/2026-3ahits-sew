@@ -15,6 +15,9 @@
   "extensions.ignoreRecommendations": true,
   "git.autofetch": true,
   "git.autofetchPeriod": 30,
+  "dotnet.defaultSolution": "ConsoleApp.slnx",
+  "dotnet.backgroundAnalysis.analyzerDiagnosticsScope": "openFiles",
+  "dotnet.backgroundAnalysis.compilerDiagnosticsScope": "openFiles",
   "files.exclude": {
     ".devcontainer": true,
     ".vscode": true,

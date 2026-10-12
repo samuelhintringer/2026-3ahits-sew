@@ -1,18 +1,16 @@
-using System.Linq.Expressions;
-using System.Net.Http.Headers;
-
 namespace OOP;
 
 class Element
 {
-    string tag = "";
-    string name = "";
-    int protons = 0;
+    public string tag = "";
+    public string name = "";
+    public int protons = 0;
 }
 
 class Table
 {
-    
+    Element[] elements = new Element[118];
+    Dictionary<int, Element> table = new Dictionary;
 }
 
 class Program
