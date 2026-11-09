@@ -2,13 +2,13 @@
 
 cd berichte
 
-cat << EOF > $(date +"%y%m%d").md
+cat << EOF > $(date +"%Y%m%d").md
 # Arbeitsbericht
 
 - Name: Samuel Hintringer
-- Fach: SEW-Übunugen
+- Fach: SEW
 - Datum: $(date +"%d.%m.%Y")
-- Klasse: 2AHITS
+- Klasse: 3AHITS
 - Thema: $1
 - Aufgaben: $2
 - Source: $3
