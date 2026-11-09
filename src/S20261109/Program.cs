@@ -68,6 +68,16 @@ class Rechteck
         b += b * p;
     }
 
+    public double Area()
+    {
+        return a * b;
+    }
+
+    public int Tile(Rechteck r)
+    {
+        return Math.Floor(Area(100,64)/r.Area());
+    }
+
     public Rechteck(double a, double b)
     {
         this.a = a;
