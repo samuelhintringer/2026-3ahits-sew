@@ -40,3 +40,39 @@ class Schulklasse
         nameKV = "Günther Strasser";
     }
 }
+
+class Rechteck
+{
+    double a = 0.0;
+    double b = 0.0;
+
+    public override string ToString()
+    {
+        return $"{a} {b}";
+    }
+
+    public void Resize()
+    {
+        if(a < b) b -= a;
+        if(b < a) a -= b;
+    }
+
+    public void Inflate(double p)
+    {
+        if(p > 100.0 || p < 1.0)
+        {
+            return;
+        }
+        p/=100;
+        a += a * p;
+        b += b * p;
+    }
+
+    public Rechteck(double a, double b)
+    {
+        this.a = a;
+        this.b = b;
+    }
+
+    public Rechteck() : this(10,20){}
+}
