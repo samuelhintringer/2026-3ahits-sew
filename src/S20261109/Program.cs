@@ -7,3 +7,8 @@ class Program
         Console.WriteLine("Hello, World!");
     }
 }
+
+class Schulklasse
+{
+    
+}

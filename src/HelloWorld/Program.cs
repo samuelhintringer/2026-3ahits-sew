@@ -10,7 +10,7 @@ class Element
 class Table
 {
     Element[] elements = new Element[118];
-    Dictionary<int, Element> table = new Dictionary;
+    Dictionary<int, Element> table = new Dictionary<int, Element>();
 }
 
 class Program

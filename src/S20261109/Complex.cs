@@ -5,13 +5,15 @@ public class Complex {
     public Complex(double real, double imag) {
         re = real;
         im = imag;
-        im = 300;
     }
 
-    public override string ToString() {
-        return $"";
+    public override string ToString() 
+    {
+        if (im >= 0)
+            return $"{re} + {im}i";
+        else
+            return $"{re} - {Math.Abs(im)}i";
     }
-
     public double Abs() {
         return Math.Sqrt(re * re + im * im);
     }
