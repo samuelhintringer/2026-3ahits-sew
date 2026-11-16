@@ -1,6 +1,6 @@
 public class Complex {
-    private readonly double re;   // Realteil
-    private readonly double im;   // Imaginärteil
+    public readonly double re;   // Realteil
+    public readonly double im;   // Imaginärteil
 
     public Complex(double real, double imag) {
         re = real;

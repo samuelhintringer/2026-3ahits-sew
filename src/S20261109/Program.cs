@@ -1,10 +1,13 @@
-namespace S20261109;
-
-class Program
+Complex k = new Complex(-1.2, 0.1);
+for (int i = 0; i < 100; i++)
 {
-    static void Main(string[] args)
+    if (k.re < -2 && k.re < 1.1 & k.im > -1.1 && k.im < 1.1)
     {
-        
+        continue;
+    }
+    else
+    {
+        break;
     }
 }
 
