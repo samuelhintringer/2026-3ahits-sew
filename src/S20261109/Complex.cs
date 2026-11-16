@@ -14,6 +14,7 @@ public class Complex {
         else
             return $"{re} - {Math.Abs(im)}i";
     }
+    
     public double Abs() {
         return Math.Sqrt(re * re + im * im);
     }

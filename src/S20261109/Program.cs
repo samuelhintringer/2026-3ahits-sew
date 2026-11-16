@@ -1,13 +1,23 @@
-Complex k = new Complex(-1.2, 0.1);
-for (int i = 0; i < 100; i++)
+namespace S20261109;
+
+class Program
 {
-    if (k.re < -2 && k.re < 1.1 & k.im > -1.1 && k.im < 1.1)
+    static void Main(string[] args)
     {
-        continue;
-    }
-    else
-    {
-        break;
+        Complex c = new Complex(-1.2,0.1);
+        double z = 0;
+        for(int i = 0; i < 100; i++)
+        {
+            z = z * z + (c.re + c.im);
+            if(c.re < -2 && c.re < 1.1 & c.im > -1.1 && c.im < 1.1)
+            {
+	            continue;
+            }
+            else
+            {
+	            break;
+            }
+        }
     }
 }
 
