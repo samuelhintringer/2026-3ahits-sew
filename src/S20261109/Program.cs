@@ -75,7 +75,8 @@ class Rechteck
 
     public int Tile(Rechteck r)
     {
-        return Math.Floor(Area(100,64)/r.Area());
+
+        return (int)Math.Floor(Area()/r.Area());
     }
 
     public Rechteck(double a, double b)
