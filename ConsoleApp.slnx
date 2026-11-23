@@ -2,6 +2,7 @@
   <Folder Name="/src/">
     <Project Path="src/S20261109/S20261109.csproj" />
     <Project Path="src/S20261116/S20261116.csproj" />
+    <Project Path="src/S20261123/S20261123.csproj" />
   </Folder>
   <Project Path="src/HelloWorld/HelloWorld.csproj" />
 </Solution>
