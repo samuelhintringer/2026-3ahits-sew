@@ -8,7 +8,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        
+        Dauer a = new Dauer(1, 50);
+        Dauer b = new Dauer(25);
+        Dauer c = a.Plus(b);
+        Console.WriteLine(c);
     }
 }
 class Dauer
@@ -37,13 +40,13 @@ class Dauer
         return stunden * 60 + minuten;
     }
     // e)
-    public bool IstLaengerAls (Dauer d)
+    public bool IstLaengerAls (Dauer t)
     {
-        return GesamtMinuten() > d.GesamtMinuten();
+        return ( GesamtMinuten() > t.GesamtMinuten() );
     }
     // f) neues Objekt, this und d bleiben unveraendert
-    public Dauer Plus (Dauer d)
+    public Dauer Plus (Dauer t)
     {
-        return new Dauer (stunden + d.stunden, minuten + d.minuten);
+        return new Dauer (stunden + t.stunden, minuten + t.minuten);
     }
 }
